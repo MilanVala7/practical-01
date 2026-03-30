@@ -29,6 +29,10 @@ internal class Program
         {
             Console.WriteLine("Error: " + e.Message);
         }
+        catch(FormatException)
+        {
+            Console.WriteLine("Error: Non-numeric value entered. Please enter a Numeric value.");
+        }
         catch(Exception e)
         {
             Console.WriteLine("Error: " + e.Message);
